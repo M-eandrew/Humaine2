@@ -121,21 +121,21 @@
                             <th> Camp </th>
                           </tr>
                         </thead>
-                        @foreach($refugees as $refugee)
+                        @foreach($refugee as $refugees)
                           <tbody>
                             <tr>
                               <td>
                               </td>
-                              <td>{{$refugee->id}}</td>
+                              <td>{{$refugees->id}}</td>
                               <td>
-                                <img src="refugeeimage/{{$refugee->rphoto}}"/>
+                                <img src="refugeeimage/{{$refugees->rphoto}}"/>
                               </td>
-                              <td><a href="{{ route('profile') }}" target="_blank">{{$refugee->name}}</a></td>
-                              <td> {{$refugee->country}} </td>
-                              <td> {{$refugee->bdate}} </td>
-                              <td> {{$refugee->idnum}} </td>
-                              <td> {{$refugee->phonenum}} </td>
-                              <td> {{$refugee->camp}} </td>
+                              <td><a href="{{ route('profile') }}" target="_blank">{{$refugees->name}}</a></td>
+                              <td> {{$refugees->country}} </td>
+                              <td> {{$refugees->bdate}} </td>
+                              <td> {{$refugees->idnum}} </td>
+                              <td> {{$refugees->phonenum}} </td>
+                              <td> {{$refugees->camp}} </td>
                             </tr>
                             <tr>
                               
@@ -166,7 +166,7 @@
                                 <td>
                                   <i class="flag-icon flag-icon"></i>
                                 </td>
-                                <td>{{$refugee->country}}</td>
+                                <td>{{$refugees->country}}</td>
                                 <td class="text-right"> 1 </td>
                                 <td class="text-right font-weight-medium"> 50.00% </td>
                               </tr>
